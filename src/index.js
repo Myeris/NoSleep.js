@@ -13,7 +13,7 @@ class NoSleep {
     } else {
       // Set up no sleep video element
       this.noSleepVideo = document.createElement('video')
-
+      this.noSleepVideo.setAttribute('muted', true)
       this.noSleepVideo.setAttribute('title', 'No Sleep')
       this.noSleepVideo.setAttribute('playsinline', '')
       this.noSleepVideo.setAttribute('src', mediaFile)
